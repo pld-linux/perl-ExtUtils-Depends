@@ -1,9 +1,6 @@
 #
 # Conditional build:
-# _without_tests - do not perform "make test"
-#
-# TODO:
-# - check BRs
+%bcond_without tests 	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	ExtUtils
@@ -19,6 +16,7 @@ Source0:	http://dl.sourceforge.net/gtk2-perl/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	aed7a154182cc9bffb020a64f22ae022
 URL:		http://gtk2-perl.sf.net/
 BuildRequires:	perl-devel >= 5.8.0
+BuildRequires:	perl-tools-pod
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -40,7 +38,7 @@ funkcji i map typów udostêpnianych przez inne rozszerzenia Perla.
 %{__make} \
 	OPTIMIZE="%{rpmcflags}"
 
-%{!?_without_tests:%{__make} test}
+%{?with_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
