@@ -7,7 +7,7 @@
 %define	pnam	Depends
 Summary:	ExtUtils::Depends - easily build XS extensions
 Summary(pl):	ExtUtils::Depends - ³atwe budowanie rozszerzeñ XS
-Name:		perl-%{pdir}-%{pnam}
+Name:		perl-ExtUtils-Depends
 Version:	0.202
 Release:	1
 # same as perl
