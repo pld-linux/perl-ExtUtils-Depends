@@ -16,7 +16,6 @@ Source0:	http://dl.sourceforge.net/gtk2-perl/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	aed7a154182cc9bffb020a64f22ae022
 URL:		http://gtk2-perl.sf.net/
 BuildRequires:	perl-devel >= 5.8.0
-BuildRequires:	perl-tools-pod
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
