@@ -4,12 +4,12 @@
 #
 # TODO:
 # - check BRs
-# - intl descs
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	ExtUtils
 %define	pnam	Depends
 Summary:	ExtUtils::Depends - Easily build XS extensions
+Summary(pl):	ExtUtils::Depends - ³atwe budowanie rozszerzeñ XS
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.102
 Release:	0.1
@@ -24,7 +24,11 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This module tries to make it easy to build Perl extensions that use
-functions and typemaps provided by other perl extensions.
+functions and typemaps provided by other Perl extensions.
+
+%description -l pl
+Ten modu³ próbuje u³atwiæ budowanie perlowych rozszerzeñ u¿ywaj±cych
+funkcji i map typów udostêpnianych przez inne rozszerzenia Perla.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
