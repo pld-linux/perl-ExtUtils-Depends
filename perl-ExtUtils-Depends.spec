@@ -3,8 +3,8 @@
 %bcond_without	tests 	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	ExtUtils
-%define	pnam	Depends
+%define		pdir	ExtUtils
+%define		pnam	Depends
 Summary:	ExtUtils::Depends - easily build XS extensions
 Summary(pl):	ExtUtils::Depends - ³atwe budowanie rozszerzeñ XS
 Name:		perl-ExtUtils-Depends
