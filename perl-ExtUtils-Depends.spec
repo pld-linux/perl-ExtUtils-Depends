@@ -5,7 +5,7 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	ExtUtils
 %define	pnam	Depends
-Summary:	ExtUtils::Depends - Easily build XS extensions
+Summary:	ExtUtils::Depends - easily build XS extensions
 Summary(pl):	ExtUtils::Depends - ³atwe budowanie rozszerzeñ XS
 Name:		perl-%{pdir}-%{pnam}
 Version:	0.202
