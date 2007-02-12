@@ -6,7 +6,7 @@
 %define		pdir	ExtUtils
 %define		pnam	Depends
 Summary:	ExtUtils::Depends - easily build XS extensions
-Summary(pl):	ExtUtils::Depends - ³atwe budowanie rozszerzeñ XS
+Summary(pl.UTF-8):   ExtUtils::Depends - Å‚atwe budowanie rozszerzeÅ„ XS
 Name:		perl-ExtUtils-Depends
 Version:	0.205
 Release:	1
@@ -24,9 +24,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This module tries to make it easy to build Perl extensions that use
 functions and typemaps provided by other Perl extensions.
 
-%description -l pl
-Ten modu³ próbuje u³atwiæ budowanie perlowych rozszerzeñ u¿ywaj±cych
-funkcji i map typów udostêpnianych przez inne rozszerzenia Perla.
+%description -l pl.UTF-8
+Ten moduÅ‚ prÃ³buje uÅ‚atwiÄ‡ budowanie perlowych rozszerzeÅ„ uÅ¼ywajÄ…cych
+funkcji i map typÃ³w udostÄ™pnianych przez inne rozszerzenia Perla.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
