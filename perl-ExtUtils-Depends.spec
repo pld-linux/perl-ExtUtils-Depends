@@ -36,6 +36,7 @@ funkcji i map typów udostępnianych przez inne rozszerzenia Perla.
 	INSTALLDIRS=vendor
 
 %{__make} \
+	CC="%{__cc}" \
 	OPTIMIZE="%{rpmcflags}"
 
 %{?with_tests:%{__make} test}
