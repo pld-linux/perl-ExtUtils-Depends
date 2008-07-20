@@ -8,13 +8,13 @@
 Summary:	ExtUtils::Depends - easily build XS extensions
 Summary(pl.UTF-8):	ExtUtils::Depends - łatwe budowanie rozszerzeń XS
 Name:		perl-ExtUtils-Depends
-Version:	0.205
-Release:	2
+Version:	0.300
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://dl.sourceforge.net/gtk2-perl/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	02c22a93ec9efb8e457764114ce24eb4
+# Source0-md5:	69061666b5f96663e0a1266c1d76ad6b
 URL:		http://gtk2-perl.sourceforge.net/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
