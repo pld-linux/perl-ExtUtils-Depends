@@ -5,17 +5,17 @@
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	ExtUtils
 %define		pnam	Depends
-Summary:	ExtUtils::Depends - easily build XS extensions
-Summary(pl.UTF-8):	ExtUtils::Depends - łatwe budowanie rozszerzeń XS
+Summary:	ExtUtils::Depends - easily build XS extensions that depend on XS extensions
+Summary(pl.UTF-8):	ExtUtils::Depends - łatwe budowanie rozszerzeń XS zależących od innych rozszerzeń XS
 Name:		perl-ExtUtils-Depends
-Version:	0.302
+Version:	0.304
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://dl.sourceforge.net/gtk2-perl/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	db46426f0599668da95c21b53b532508
-URL:		http://gtk2-perl.sourceforge.net/
+Source0:	http://www.cpan.org/modules/by-module/ExtUtils/FLORA/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	da66d6cb19e2c76d7f3266846832026c
+URL:		http://search.cpan.org/dist/ExtUtils-Depends/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -54,4 +54,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %{perl_vendorlib}/ExtUtils/Depends.pm
-%{_mandir}/man3/*
+%{_mandir}/man3/ExtUtils::Depends.3pm*
