@@ -9,7 +9,7 @@ Summary:	ExtUtils::Depends - easily build XS extensions that depend on XS extens
 Summary(pl.UTF-8):	ExtUtils::Depends - łatwe budowanie rozszerzeń XS zależących od innych rozszerzeń XS
 Name:		perl-ExtUtils-Depends
 Version:	0.304
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
