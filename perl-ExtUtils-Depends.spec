@@ -21,6 +21,7 @@ BuildRequires:	perl-Test-Number-Delta >= 1.0
 BuildRequires:	perl-Test-Simple
 %endif
 BuildRequires:	rpm-perlprov >= 4.1-13
+BuildRequires:	rpmbuild(macros) >= 1.745
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
